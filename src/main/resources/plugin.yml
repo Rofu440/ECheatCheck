@@ -1,0 +1,15 @@
+name: ECheatCheck
+version: 1.0
+main: org.rofu.echeatcheck.ECheatCheck
+api-version: 1.20
+author: RofuTeam
+
+commands:
+  revise:
+    usage: /<command> <start|stop|addtime|freeze|finish> [args]
+    permission: ecc.admin
+    aliases: [check, cheatcheck]
+
+permissions:
+  ecc.admin:
+    default: op
