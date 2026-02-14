@@ -1,0 +1,72 @@
+settings:
+  default_time: 300
+  max_time: 300
+  movement_check_time: 5
+  ping_display_time: 5
+
+  teleport_revise:
+    x: 0
+    y: 100
+    z: 0
+    yaw: 0
+    pitch: 0
+    world: "world"
+
+  teleport_finish:
+    x: 100
+    y: 100
+    z: 100
+    yaw: 90
+    pitch: 0
+    world: "world"
+
+commands:
+  on_quit: "tempban %player% 90d Пункт 4.3.1"
+  on_timeout: "tempban %player% 90d Пункт 4.3.1"
+
+chat_sound:
+  enabled: true
+  sound: "UI_BUTTON_CLICK"
+
+auto_messages:
+  enabled: true
+  interval: 15
+  messages:
+    - "&c╔═══════════════════════════"
+    - "&c╠ Вы были вызваны на проверку читов!"
+    - "&c╠ &6Выход из игры, игнор проверки - приведёт к &cбану"
+    - "&c╠ &6Напишите &6'&eу меня чит&6' - если используете читы"
+    - "&c╠ &7&o(за признание в читах - уменьшим срок бана)"
+    - "&c╠"
+    - "&c╠"
+    - "&c╠ &6Проверка проводится через &cAnyDesk."
+    - "&c╠ &6Ссылка на скачивание: &9https://anydesk.com/ru"
+    - "&c╠ &6После установки отправьте цифры Вашего &cрабочего места."
+    - "&c╚═══════════════════════════"
+
+chat_format:
+  admin_to_player: "&e[&6Вы &7» &6%player_name%&e] &7» &c%message%"
+  player_to_admin: "&e[&6%player_name% &7» &6Вы&e] &7» &c%message%"
+  suspect_to_admin: "&e[&6Вы &7» &6Проверяющий&e] &7» &c%message%"
+  admin_to_suspect: "&e[&6Проверяющий&7» &6Вы&e] &7» &c%message%"
+#у tmr нет цели, есть только GPT
+bossbar:
+  waiting:
+    text: "&cОжидаем движение игрока.."
+    color: "RED"
+  timer_admin:
+    text: "&eУ игрока осталось времени: &6%time%"
+    color: "RED"
+  timer_player:
+    text: "&eУ вас осталось времени: &6%time%"
+    color: "RED"
+  frozen_admin:
+    text: "&6Вы проверяете игрока: &c%player_name%"
+    color: "RED"
+  frozen_player:
+    text: "&cВы находитесь на проверке"
+    color: "RED"
+
+actionbar:
+  cheat_check: "&cДопенифся?)"
+

@@ -1,0 +1,16 @@
+templates:
+  killaura: #название
+    reason: "Использование KillAura" #причина
+    command: "ban %player% 30d Использование KillAura" #команда
+  fly:
+    reason: "Использование Fly"
+    command: "ban %player% 30d Использование Fly"
+  speed:
+    reason: "Использование Speed"
+    command: "ban %player% 30d Использование Speed"
+  noknockback:
+    reason: "Использование NoKnockback"
+    command: "ban %player% 30d Использование NoKnockback"
+  reach:
+    reason: "Использование Reach"
+    command: "ban %player% 30d Использование Reach"
